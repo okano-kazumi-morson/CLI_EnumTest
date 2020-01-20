@@ -13,7 +13,11 @@ public:
 	CsLibrary::CsEnum ^ GetEnum() {
 		CsLibrary::CsEnum ^ res = gcnew CsLibrary::CsEnum;
 		res						= CsLibrary::CsEnum::Two;
-		return res;
+		// return res;
+
+		CsLibrary::CsEnum ^ res2 = gcnew CsLibrary::CsEnum(CsLibrary::CsEnum::One);
+
+		return res2;
 	}
 };
 
